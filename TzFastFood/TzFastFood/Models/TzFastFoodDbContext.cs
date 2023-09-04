@@ -14,6 +14,11 @@ namespace TzFastFood.Models
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+      
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Define relationships here
